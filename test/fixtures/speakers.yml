@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  nameid: MyString
+  qq: MyString
+  email: MyString
+  weixin: MyString
+  weibo: MyString
+
+two:
+  name: MyString
+  nameid: MyString
+  qq: MyString
+  email: MyString
+  weixin: MyString
+  weibo: MyString

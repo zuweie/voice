@@ -1,0 +1,33 @@
+<h1>Listing speakers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Nameid</th>
+    <th>Qq</th>
+    <th>Email</th>
+    <th>Weixin</th>
+    <th>Weibo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @speakers.each do |speaker| %>
+  <tr>
+    <td><%= speaker.name %></td>
+    <td><%= speaker.nameid %></td>
+    <td><%= speaker.qq %></td>
+    <td><%= speaker.email %></td>
+    <td><%= speaker.weixin %></td>
+    <td><%= speaker.weibo %></td>
+    <td><%= link_to 'Show', speaker %></td>
+    <td><%= link_to 'Edit', edit_speaker_path(speaker) %></td>
+    <td><%= link_to 'Destroy', speaker, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Speaker', new_speaker_path %>

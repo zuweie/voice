@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @rekord.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @rekord.url %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @rekord.updated %>
+</p>
+
+<p>
+  <b>Novel:</b>
+  <%= @rekord.novel %>
+</p>
+
+<p>
+  <b>Speaker:</b>
+  <%= @rekord.speaker %>
+</p>
+
+
+<%= link_to 'Edit', edit_rekord_path(@rekord) %> |
+<%= link_to 'Back', rekords_path %>

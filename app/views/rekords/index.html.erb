@@ -1,0 +1,31 @@
+<h1>Listing rekords</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th>Updated</th>
+    <th>Novel</th>
+    <th>Speaker</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rekords.each do |rekord| %>
+  <tr>
+    <td><%= rekord.name %></td>
+    <td><%= rekord.url %></td>
+    <td><%= rekord.updated %></td>
+    <td><%= rekord.novel %></td>
+    <td><%= rekord.speaker %></td>
+    <td><%= link_to 'Show', rekord %></td>
+    <td><%= link_to 'Edit', edit_rekord_path(rekord) %></td>
+    <td><%= link_to 'Destroy', rekord, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rekord', new_rekord_path %>

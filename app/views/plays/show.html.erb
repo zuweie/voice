@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @play.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @play.url %>
+</p>
+
+<p>
+  <b>Poster:</b>
+  <%= @play.poster %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @play.body %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @play.updated %>
+</p>
+
+<p>
+  <b>Tag:</b>
+  <%= @play.tag %>
+</p>
+
+<p>
+  <b>Speaker:</b>
+  <%= @play.speaker %>
+</p>
+
+
+<%= link_to 'Edit', edit_play_path(@play) %> |
+<%= link_to 'Back', plays_path %>

@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @novel.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @novel.url %>
+</p>
+
+<p>
+  <b>Poster:</b>
+  <%= @novel.poster %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @novel.author %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @novel.body %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%= @novel.updated %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @novel.status %>
+</p>
+
+<p>
+  <b>Keyword:</b>
+  <%= @novel.keyword %>
+</p>
+
+<p>
+  <b>Categroy:</b>
+  <%= @novel.category %>
+</p>
+
+<p>
+  <b>Speaker:</b>
+  <%= @novel.speaker %>
+</p>
+
+
+<%= link_to 'Edit', edit_novel_path(@novel) %> |
+<%= link_to 'Back', novels_path %>
